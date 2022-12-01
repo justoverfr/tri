@@ -1,0 +1,21 @@
+FONCTION selection(tableau t)
+
+    POUR chaque index i de 0 à taille(t) - 1 FAIRE
+        variable échange <-- faux
+        variable valeurMinimale <-- t[i]
+
+        POUR chaque index j de i à taille(t) FAIRE
+            SI t[j] < valeurMinimale ALORS
+                valeurMinimale <-- t[j]
+                échange <-- vrai
+            FIN SI
+        FIN POUR
+
+        SI échange == vrai ALORS
+            ECHANGER t[i] et valeurMinimale
+        FIN SI
+
+    FIN POUR
+
+    AFFICHER t
+FIN FONCTION selection

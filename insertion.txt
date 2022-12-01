@@ -1,0 +1,25 @@
+FONCTION insertion(tableau t)
+    variable max <-- t[0]
+    POUR chaque index i de 1 à taille(t) FAIRE
+        SI t[i] > max ALORS
+            max <-- t[i]
+        FIN SI
+        SINON
+
+            POUR chaque index j de i - 1 à 0 FAIRE
+                SI t[j] < t[i] ALORS
+                    variable nouvellePosition <-- j + 1
+                    SORTIR DE POUR
+                FIN SI
+                SI j == 0 ALORS
+                    variable nouvellePosition <-- 0
+                FIN SI
+            FIN POUR
+            DEPLACER t[i] à l'index nouvellePosition
+
+        FIN SINON
+
+    FIN POUR
+
+    AFFICHER t
+FIN FONCTION insertion
