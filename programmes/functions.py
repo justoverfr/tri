@@ -12,6 +12,18 @@ def generateTable(size, min, max):
     return table
 
 
+def generateBestTable(size, min, max):
+    table = generateTable(size, min, max)
+    table.sort()
+    return table
+
+
+def generateWorstTable(size, min, max):
+    table = generateTable(size, min, max)
+    table.sort(reverse=True)
+    return table
+
+
 def stats(min, max, step, nbr, sortingMethod):
     for i in range(min, max + step, step):
 
