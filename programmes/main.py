@@ -34,14 +34,14 @@ max = 20
 step = 5
 nbr = 10
 
-print("Sélection\n")
+print("Sélection :")
 stats(min, max, step, nbr, selection)
 
-print("Insertion\n")
+print("\nInsertion :")
 stats(min, max, step, nbr, insertion)
 
-print("Bulles\n")
+print("\nBulles :")
 stats(min, max, step, nbr, bulles)
 
-print("Bulles optimisé\n")
+print("\nBulles optimisé :")
 stats(min, max, step, nbr, bullesOpti)

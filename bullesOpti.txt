@@ -6,7 +6,7 @@ FONCTION bullesOpti(tableau t)
     TANT QUE tableauTrié == faux FAIRE
         tableauTrié <-- vrai
 
-        POUR chaque index i allant de 0 à indexMaximum FAIRE
+        POUR chaque index i allant allant de 0 à indexMaximum FAIRE
             SI t[i] > t[i+1] ALORS
                 
                 ECHANGER t[i] et t[i+1]

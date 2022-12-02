@@ -1,15 +1,15 @@
 FONCTION insertion(tableau t)
-    VARIABLE INT valeurMaximum <-- t[0]
-    POUR chaque index i de 1 à taille(t) FAIRE
+    VARIABLE INT valeurMaximum <-- premier nombre du tableau
+    POUR chaque index i allant de 1 à taille(t) FAIRE
         SI t[i] > valeurMaximum ALORS
             valeurMaximum <-- t[i]
         FIN SI
         SINON
 
-            POUR chaque index j de i - 1 à 0 FAIRE
+            POUR chaque index j allant de i - 1 à 0 FAIRE
                 SI t[j] < t[i] ALORS
                     VARIABLE INT nouvellePosition <-- j + 1
-                    SORTIR DE POUR
+                    SORTIR de POUR
                 FIN SI
                 SI j == 0 ALORS
                     VARIABLE INT nouvellePosition <-- 0
@@ -23,3 +23,6 @@ FONCTION insertion(tableau t)
 
     AFFICHER t
 FIN FONCTION insertion
+
+[1, 3, 5, 6, 7, 8, 2, 4]
+max = 8

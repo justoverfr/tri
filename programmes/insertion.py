@@ -14,9 +14,12 @@ def insertion(table):
                 comparaison += 1
                 if j == 0:
                     newPosition = 0
+            
             table.insert(newPosition, table.pop(i))
             affectation += 1
+            
         comparaison += 1
 
     operation = comparaison + affectation
     return operation
+
