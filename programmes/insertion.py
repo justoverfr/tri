@@ -19,5 +19,4 @@ def insertion(table):
         comparaison += 1
 
     operation = comparaison + affectation
-    print(table)
     return operation
