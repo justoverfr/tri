@@ -1,0 +1,16 @@
+FONCTION stats(int min, int max, int step, int nbr)
+    POUR chaque tailleTableau allant de min à max par itération de step FAIRE
+
+        VARIABLE INT totalOperation <-- 0
+        POUR nbr tableau
+            GENERER tableauAléatoire
+            VARIABLE operation <-- methodeTri(tableauAléatoire)
+            totalOperation <-- totalOperation + operation
+        FIN POUR
+
+        VARIABLE FLOAT moyenne <-- totalOperation / nbr
+
+        AFFICHER tailleTableau, moyenne
+
+    FIN POUR
+FIN FONCTION stats

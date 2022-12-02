@@ -3,7 +3,7 @@ from functions import *
 # 3.b
 print("EXERCICE 3.b\n")
 
-size = 10
+size = 100
 
 print("Il faut ", selection(generateBestTable(size, 0, 100)),
       " opérations pour trier un tableau de", size, "éléments avec la méthode de tri par sélection dans le meilleur des cas.")
