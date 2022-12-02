@@ -1,21 +1,23 @@
 FONCTION bullesOpti(tableau t)
 
-    variable indexMax <-- taille(t) - 1
-    variable tableauTrié <-- faux
+    VARIABLE INT indexMinimum <-- 0
+    VARIABLE INT indexMaximum <-- taille(t) - 1
+    VARIABLE BOOL tableauTrié <-- faux
     TANT QUE tableauTrié == faux FAIRE
         tableauTrié <-- vrai
 
-        POUR chaque index i allant de 0 à indexMax FAIRE
+        POUR chaque index i allant de 0 à indexMaximum FAIRE
             SI t[i] > t[i+1] ALORS
                 
                 ECHANGER t[i] et t[i+1]
                 tableauTrié <-- faux
                 
-                indexMax <-- i
+                indexMinimum <-- index premier échange - 1
+                indexMaximum <-- index dernier échange
             FIN SI
         FIN POUR
     
     FIN TANT QUE
-    
+
     AFFICHER t
 FIN FONCTION bullesOpti

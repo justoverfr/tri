@@ -9,12 +9,12 @@ def selection(table):
         for j in range(i + 1, len(table)):
             if (table[j] < min):
                 min = table[j]
-                indexMin = j
+                minIndex = j
                 swap = True
             comparaison += 1
 
         if swap:
-            table[i], table[indexMin] = table[indexMin], table[i]
+            table[i], table[minIndex] = table[minIndex], table[i]
             affectation += 3
 
     operation = comparaison + affectation
