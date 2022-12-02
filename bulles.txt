@@ -1,4 +1,4 @@
-FONCTION bullesOpti(tableau t)
+FONCTION bulles(tableau t)
     
     VARIABLE INT indexMaximum <-- taille(t) - 1
     VARIABLE BOOL tableauTrié <-- faux

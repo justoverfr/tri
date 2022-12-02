@@ -32,7 +32,7 @@ print("EXERCICE 3.c\n")
 min = 10
 max = 20
 step = 5
-nbr = 10
+nbr = 100
 
 print("Sélection :")
 stats(min, max, step, nbr, selection)
